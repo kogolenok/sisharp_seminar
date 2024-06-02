@@ -12,14 +12,12 @@
 // int y = Convert.ToInt32(Console.ReadLine());
 // if (x == y*y)
 // {
-//     Console.WriteLine($"x = {x}, y = {y}->yes");
+//     Console.WriteLine($"x = {x}, y = {y}->yes");//Для чего $-?
 // }
 // else
 // {
 //   Console.WriteLine($"x = {x}, y = {y}->no");
 // }  
-
-
 
 // ЗАДАНИЕ 2
 // Написать программу принимающую на вход число N а на выходе n-1
@@ -31,7 +29,7 @@
 // while (start <= n)
 // {
 // System.Console.Write(start + " ");
-// start++;//start=start+1
+// start++;//start++ - тоже самое что start=start+1
 // }
 
 //ЗАДАНИЕ 3
@@ -40,7 +38,7 @@
 
 // Console.WriteLine("Input number: ");
 // int num = Convert.ToInt32(Console.ReadLine());
-// if(num >= 100 && num <= 999)// проверяем на 3-х значность
+// if(num >= 100 && num <= 999)// проверяем на 3-х значность //&&- и в условии, а ||-или
 // {
 // int ed = num % 10; //456%10=6
 // int sot = num / 100; //456/100=4
