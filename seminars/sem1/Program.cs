@@ -6,18 +6,18 @@
 
 // 1 Задание является ли число квадратом другого н.р. x=4 y=2 - yes
 
-Console.WriteLine("Input first number: ");
-int x = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input second number: ");
-int y = Convert.ToInt32(Console.ReadLine());
-if (x == y*y)
-{
-    Console.WriteLine($"x = {x}, y = {y}->yes");
-}
-else
-{
-  Console.WriteLine($"x = {x}, y = {y}->no");
-}  
+// Console.WriteLine("Input first number: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input second number: ");
+// int y = Convert.ToInt32(Console.ReadLine());
+// if (x == y*y)
+// {
+//     Console.WriteLine($"x = {x}, y = {y}->yes");
+// }
+// else
+// {
+//   Console.WriteLine($"x = {x}, y = {y}->no");
+// }  
 
 
 
@@ -34,3 +34,19 @@ else
 // start++;//start=start+1
 // }
 
+//ЗАДАНИЕ 3
+//Входит н-х значное число, а выходит сумма 1-й и 3-й цифры 3-х значного числа
+// но сначала условие проверки на 3-х значность 
+
+Console.WriteLine("Input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if(num >= 100 && num <= 999)// проверяем на 3-х значность
+{
+int ed = num % 10; //456%10=6
+int sot = num / 100; //456/100=4
+System.Console.WriteLine("sum =" + (ed + sot));
+}
+else
+{
+    System.Console.WriteLine("You input not three digit number");
+}
