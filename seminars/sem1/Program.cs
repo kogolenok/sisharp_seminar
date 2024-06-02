@@ -1,5 +1,5 @@
 ﻿
-
+//Возведение в квадрат
 // Console.WriteLine("Input number: ");
 // int x = Convert.ToInt32(Console.ReadLine());
 // System.Console.WriteLine("Quard of" + x + " is " +x*x);
@@ -38,15 +38,15 @@
 //Входит н-х значное число, а выходит сумма 1-й и 3-й цифры 3-х значного числа
 // но сначала условие проверки на 3-х значность 
 
-Console.WriteLine("Input number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-if(num >= 100 && num <= 999)// проверяем на 3-х значность
-{
-int ed = num % 10; //456%10=6
-int sot = num / 100; //456/100=4
-System.Console.WriteLine("sum =" + (ed + sot));
-}
-else
-{
-    System.Console.WriteLine("You input not three digit number");
-}
+// Console.WriteLine("Input number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if(num >= 100 && num <= 999)// проверяем на 3-х значность
+// {
+// int ed = num % 10; //456%10=6
+// int sot = num / 100; //456/100=4
+// System.Console.WriteLine("sum =" + (ed + sot));
+// }
+// else
+// {
+//     System.Console.WriteLine("You input not three digit number");
+// }
