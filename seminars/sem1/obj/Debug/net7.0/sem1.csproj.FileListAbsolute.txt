@@ -1,0 +1,14 @@
+D:\GeekBrains\sem30.05.24\seminars\sem1\bin\Debug\net7.0\sem1.exe
+D:\GeekBrains\sem30.05.24\seminars\sem1\bin\Debug\net7.0\sem1.deps.json
+D:\GeekBrains\sem30.05.24\seminars\sem1\bin\Debug\net7.0\sem1.runtimeconfig.json
+D:\GeekBrains\sem30.05.24\seminars\sem1\bin\Debug\net7.0\sem1.dll
+D:\GeekBrains\sem30.05.24\seminars\sem1\bin\Debug\net7.0\sem1.pdb
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\sem1.GeneratedMSBuildEditorConfig.editorconfig
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\sem1.AssemblyInfoInputs.cache
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\sem1.AssemblyInfo.cs
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\sem1.csproj.CoreCompileInputs.cache
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\sem1.dll
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\refint\sem1.dll
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\sem1.pdb
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\sem1.genruntimeconfig.cache
+D:\GeekBrains\sem30.05.24\seminars\sem1\obj\Debug\net7.0\ref\sem1.dll
