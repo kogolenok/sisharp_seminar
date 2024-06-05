@@ -69,6 +69,44 @@
 
 // Если бы делал этот метод Void то выглядело бы так:
 
+// bool IsThreeDigit(int num)
+// {
+//     if(num > 99 && num < 1000)
+//     {
+//         return true;
+//     }
+//     return false;
+// }
+
+//теперь напишем функцию, которая удалит 2-ю цифру 3-х значного числа
+// При void здесь вместо int пишу void и удаляю return 0 в 94 строке
+// void DeleteSecondDigit(int num)
+// {
+//     if(IsThreeDigit(num))
+//     {
+//         int ed = num % 10;
+//         int sot = num / 100;
+//         //Здесь вместо return ed + ... сразу вывод
+//         System.Console.WriteLine(ed + sot * 10);
+//     }
+//     else
+//     {
+//         System.Console.WriteLine("You input no Three-digit number");
+//         //Здесь был return 0;
+//     }
+// }
+
+// System.Console.WriteLine("Input number: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// //здесь system.console убираем
+// DeleteSecondDigit(a);
+
+//                             TASK2
+
+//Программа которая в трёхзначном числе
+//возведёт 2-ю цифру в степень равную 3-й цифре
+//н.р. 123-2^3=8
+
 bool IsThreeDigit(int num)
 {
     if(num > 99 && num < 1000)
@@ -78,25 +116,23 @@ bool IsThreeDigit(int num)
     return false;
 }
 
-//теперь напишем функцию, которая удалит 2-ю цифру 3-х значного числа
-// При void здесь вместо int пишу void и удаляю return 0 в 94 строке
-void DeleteSecondDigit(int num)
+void SecondThoThirdPower(int num)
 {
     if(IsThreeDigit(num))
     {
         int ed = num % 10;
-        int sot = num / 100;
-        //Здесь вместо return ed + ... сразу вывод
-        System.Console.WriteLine(ed + sot * 10);
+        int dec = num / 10 % 10;
+        System.Console.WriteLine(Math.Pow(dec, ed));
     }
     else
     {
         System.Console.WriteLine("You input no Three-digit number");
-        //Здесь был return 0;
     }
 }
 
 System.Console.WriteLine("Input number: ");
 int a = Convert.ToInt32(Console.ReadLine());
-//здесь system.console убираем
-DeleteSecondDigit(a);
+SecondThoThirdPower(a);
+
+
+
