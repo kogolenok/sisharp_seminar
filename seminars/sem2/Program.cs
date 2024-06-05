@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-
-//методы-функции
+﻿//методы-функции
 //int Pow (int n)
 //{
 //    return n*n;
@@ -38,20 +35,22 @@
 
 
 //Сначала нужно определить 3-х значное число или нет
+//bool либо да либо нет
 
-bool IsThreeDigit(int num)//bool либо да либо нет
+bool IsThreeDigit(int num)
 {
-    if (num > 99 $$ num < 1000)
+    if(num > 99 && num < 1000)
     {
         return true;
     }
     return false;
 }
 
+//теперь напишем функцию, которая удалит 2-ю цифру 3-х значного числа
 
-int DeleteSecondDigit(int num)//теперь напишем функцию, которая удалит 2-ю цифру 3-х значного числа
+int DeleteSecondDigit(int num)
 {
-    if (IsThreeDigit(num))
+    if(IsThreeDigit(num))
     {
         int ed = num % 10;
         int sot = num / 100;
@@ -60,7 +59,7 @@ int DeleteSecondDigit(int num)//теперь напишем функцию, ко
     else
     {
         System.Console.WriteLine("You input no Three-digit number");
-        return 0;//если число не 3-х значное выводить что то всё равно должен Н.р. n
+        return 0; //если число не 3-х значное выводить что то всё равно должен Н.р. n
     }
 }
 
