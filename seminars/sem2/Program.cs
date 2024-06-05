@@ -37,6 +37,38 @@
 //Сначала нужно определить 3-х значное число или нет
 //bool либо да либо нет
 
+// bool IsThreeDigit(int num)
+// {
+//     if(num > 99 && num < 1000)
+//     {
+//         return true;
+//     }
+//     return false;
+// }
+
+// //теперь напишем функцию, которая удалит 2-ю цифру 3-х значного числа
+
+// int DeleteSecondDigit(int num)
+// {
+//     if(IsThreeDigit(num))
+//     {
+//         int ed = num % 10;
+//         int sot = num / 100;
+//         return ed + sot * 10;
+//     }
+//     else
+//     {
+//         System.Console.WriteLine("You input no Three-digit number");
+//         return 0; //если число не 3-х значное выводить что то всё равно должен Н.р. n
+//     }
+// }
+
+// System.Console.WriteLine("Input number: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine(DeleteSecondDigit(a));
+
+// Если бы делал этот метод Void то выглядело бы так:
+
 bool IsThreeDigit(int num)
 {
     if(num > 99 && num < 1000)
@@ -47,22 +79,24 @@ bool IsThreeDigit(int num)
 }
 
 //теперь напишем функцию, которая удалит 2-ю цифру 3-х значного числа
-
-int DeleteSecondDigit(int num)
+// При void здесь вместо int пишу void и удаляю return 0 в 94 строке
+void DeleteSecondDigit(int num)
 {
     if(IsThreeDigit(num))
     {
         int ed = num % 10;
         int sot = num / 100;
-        return ed + sot * 10;
+        //Здесь вместо return ed + ... сразу вывод
+        System.Console.WriteLine(ed + sot * 10);
     }
     else
     {
         System.Console.WriteLine("You input no Three-digit number");
-        return 0; //если число не 3-х значное выводить что то всё равно должен Н.р. n
+        //Здесь был return 0;
     }
 }
 
 System.Console.WriteLine("Input number: ");
 int a = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine(DeleteSecondDigit(a));
+//здесь system.console убираем
+DeleteSecondDigit(a);
