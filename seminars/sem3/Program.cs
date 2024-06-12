@@ -1,5 +1,5 @@
-﻿ //               ARRAY
-  //       TASK1
+﻿//               ARRAY
+//       TASK1
 // задать массив
 // определить есть ли число 
 // в этом массиве выводить Да или Нет
@@ -109,5 +109,58 @@
 // PrintArray(myArray);
 // myArray = ChangeArray (myArray);
 // PrintArray(myArray);
+
+//             TASK 3
+//создать рандомный массив
+//вывести новый массив - произведение пар чисел
+//н.р. первое*последнее, второе*на предпоследнее
+
+// int[] CreateArray(int size, int min, int max)
+// {
+// int[] array = new int[size];
+// Random random = new Random();
+// for(int i = 0; i < array.Length; i++)
+// {
+//     array[i] = random.Next(min, max + 1);
+// }
+// return array;
+// }
+
+// int[] CompositionArray(int[] array)//здесь будет функция с перемножением
+// {
+// int[] resultArray = new int[array.Length / 2];
+// for(int i = 0; i < resultArray.Length; i++)
+// {
+//     resultArray[i] = array[i] * array[array.Length - i - 1];
+// }
+// return resultArray;
+// }
+
+// void PrintArray(int[] array)
+// {
+// for(int i = 0; i < array.Length; i++)
+// {
+// System.Console.Write(array[i] + " ");  
+// }
+// System.Console.WriteLine("");
+// }
+
+// System.Console.WriteLine("Input size array ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input min ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input max ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[] myArray = CreateArray(size, min, max);
+// PrintArray(myArray);
+// PrintArray(CompositionArray(myArray));
+
+//при вводе 8 1 9
+//выведет 
+//6 4 7 6 1 3 7 6 (6*6 4*7 7*3 6*1)
+//36 28 21 6
+
+
 
 
