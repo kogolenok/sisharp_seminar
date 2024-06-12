@@ -9,54 +9,105 @@
 //int [] - говорит, что возвращаться будет массив, а не число
 // дальше назовём его (как угодно)
 // н.р. CreateRandomArray()
-int[] CreateRandomArray(int size, int min, int max)
-{
-int[] array = new int[size];
-Random random = new Random();
-for(int i = 0; i < array.Length; i++)
-{
-    array[i] = random.Next(min, max + 1);
-//max+1-чтобы последняя цифра массива включительно
-}
-return array;
-}
-void PrintArray(int[] array)  //он выведет и закончит работу
-{
-for(int i = 0; i < array.Length; i++)
-{
-System.Console.Write(array[i] + " ");  //Просто Write
-}
-System.Console.WriteLine();
-}
-//сделаю метод, который будет определять есть ли число в массиве
-bool SearchNum(int[] array, int num)
-{
-   for(int i = 0; i < array.Length; i++)
-   {
-    if(array [i] == num)
-    {
-        return true;
-    }
-   } 
-   return false;
-}
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+// int[] array = new int[size];
+// Random random = new Random();
+// for(int i = 0; i < array.Length; i++)
+// {
+//     array[i] = random.Next(min, max + 1);
+// //max+1-чтобы последняя цифра массива включительно
+// }
+// return array;
+// }
+// void PrintArray(int[] array)//он выведет и закончит работу
+// {
+// for(int i = 0; i < array.Length; i++)
+// {
+// System.Console.Write(array[i] + " ");//Просто Write
+// }
+// System.Console.WriteLine();
+// }
+// //сделаю метод, который будет определять есть ли число в массиве
+// bool SearchNum(int[] array, int num)
+// {
+//    for(int i = 0; i < array.Length; i++)
+//    {
+//     if(array [i] == num)
+//     {
+//         return true;
+//     }
+//    } 
+//    return false;
+// }
 
-System.Console.WriteLine("Input size array ");
-int size = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Input min ");
-int min = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Input max ");
-int max = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input size array ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input min ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input max ");
+// int max = Convert.ToInt32(Console.ReadLine());
 
 
-int[] myArray = CreateRandomArray(size, min, max);
-//System.Console.WriteLine(myArray); это метод не предназначено для вывода массива
-//нужно писать свой метод для вывода массива с 23 строки
-PrintArray(myArray);
+// int[] myArray = CreateRandomArray(size, min, max);
+// //System.Console.WriteLine(myArray); это метод не предназначено для вывода массива
+// //нужно писать свой метод для вывода массива с 23 строки
+// PrintArray(myArray);
 
-System.Console.WriteLine("Input number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine(SearchNum(myArray, num));
+// System.Console.WriteLine("Input number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine(SearchNum(myArray, num));
 
+//          TASK 2
+//задать массив из 10 чисел (-10...10)
+//заменить отрицательные - положительными
+// и наоборот
+// н.р. (1 -2 3) - (-1 2 -3)
+//погнали
+
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+// int[] array = new int[size];
+// Random random = new Random();
+// for(int i = 0; i < array.Length; i++)
+// {
+//     array[i] = random.Next(min, max + 1);
+
+// }
+// return array;
+// }
+
+// void PrintArray(int[] array)
+// {
+// for(int i = 0; i < array.Length; i++)
+// {
+// System.Console.Write(array[i] + " ");  
+// }
+// System.Console.WriteLine();
+// }
+
+
+// //новый метод замены - на + и наоборот
+// //тупо умножить на -1 и всё
+// int[] ChangeArray(int [] array)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         array[i] *= -1;
+//     }
+//     return array;
+// }
+
+// System.Console.WriteLine("Input size array ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input min ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input max ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[] myArray = CreateRandomArray(size, min, max);
+// PrintArray(myArray);
+// myArray = ChangeArray (myArray);
+// PrintArray(myArray);
 
 
