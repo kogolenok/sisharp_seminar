@@ -1,7 +1,8 @@
 ﻿// //      Метод создания и заполнения 2-у мерного массива
+// //эта функция будет создавать случайную матрицу
 // int[,] CreateRandomMatrix(int rows, int columns, int min, int max)
 // {
-//     int[,] matrix = new int[rows, columns];
+//     int[,] matrix = new int[rows, columns];//выделение памяти для массива
 //     //создам объект класса рандом
 //     Random random = new Random();//random- название, можно любое
 //     //это уже массив но с нулевыми значениями
