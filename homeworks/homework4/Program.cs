@@ -46,6 +46,34 @@
 //         }
 //     }
 // }
+// РЕШЕНИЕ Архип
+// bool IsTrue(string value)
+// {
+//     if(value == "q") return false; 
+//     int num = Convert.ToInt32(value); 
+//     int sum = 0;
+//     while(num > 0)
+//     {
+//         sum += num % 10;
+//         num/=10;
+//     }
+//     if(sum % 2 == 0) return false;
+//     return true;
+// }
+// bool work = true;
+// while(work)
+// {
+//     string value = Console.ReadLine();
+//     if(IsTrue(value))
+//     {
+//         System.Console.WriteLine("!!!");
+//     }
+// else
+// {
+//     System.Console.WriteLine("???");
+//     work = false;
+// }
+// }
 
 
 //			Задача 2: 
