@@ -94,6 +94,98 @@
 //     }
 // }
 
+//                     Задача 1
+// Задайте значения M и N. Напишите программу, которая выведет 
+// все натуральные числа в промежутке от M до N. Использовать рекурсию, 
+// не использовать циклы.
+
+                    //   Решение
 
 
+// System.Console.WriteLine("Введите значение M:");
+// int M = Convert.ToInt32(System.Console.ReadLine());
 
+// System.Console.WriteLine("Введите значение N:");
+// int N = Convert.ToInt32(System.Console.ReadLine());
+
+// System.Console.WriteLine("Натуральные числа от M до N:");
+// PrintNumbers(M, N);
+
+// void PrintNumbers(int M, int N)
+// {
+//     if (M > N) // Условие остановки рекурсии
+//     {
+//         return;
+//     }
+
+//     System.Console.WriteLine(M); // Вывод текущего числа
+//     PrintNumbers(M + 1, N); // Вызов функции с увеличением M
+// }
+
+                // Задача 2
+
+//Напишите программу вычисления функции Аккермана с помощью рекурсии.
+//Даны два неотрицательных числа m и n.
+
+                // Решение
+// Ввод значений m и n
+// System.Console.WriteLine("Введите значение m:");
+// int m = Convert.ToInt32(System.Console.ReadLine());
+
+// System.Console.WriteLine("Введите значение n:");
+// int n = Convert.ToInt32(System.Console.ReadLine());
+
+// // Вычисление функции Аккермана
+// int result = Ackermann(m, n);
+// System.Console.WriteLine($"Функция Аккермана A({m}, {n}) = {result}");
+
+// // Рекурсивная функция для вычисления функции Аккермана
+// int Ackermann(int m, int n)
+// {
+//     if (m == 0)
+//     {
+//         return n + 1;
+//     }
+//     else if (m > 0 && n == 0)
+//     {
+//         return Ackermann(m - 1, 1);
+//     }
+//     else if (m > 0 && n > 0)
+//     {
+//         return Ackermann(m - 1, Ackermann(m, n - 1));
+//     }
+//     return 0; // Это не должно достигаться
+// }
+
+                    // Задача 3
+//Задайте произвольный массив. Выведете его элементы, начиная с конца.
+//Использовать рекурсию, не использовать циклы.
+
+//Запрос ввода длины массива
+// System.Console.WriteLine("Введите длину массива:");
+// int length = Convert.ToInt32(System.Console.ReadLine());
+
+// // Создание массива заданной длины
+// int[] array = new int[length];
+
+// // Заполнение массива элементами, введенными с консоли
+// for (int i = 0; i < length; i++)
+// {
+//     System.Console.WriteLine($"Введите элемент {i + 1}:");
+//     array[i] = Convert.ToInt32(System.Console.ReadLine());
+// }
+
+// System.Console.WriteLine("Элементы массива в обратном порядке:");
+// PrintArrayReverse(array, array.Length - 1);
+
+// // Рекурсивная функция для вывода массива в обратном порядке
+// void PrintArrayReverse(int[] array, int index)
+// {
+//     if (index < 0) // Условие остановки рекурсии
+//     {
+//         return;
+//     }
+
+//     System.Console.WriteLine(array[index]); // Вывод текущего элемента
+//     PrintArrayReverse(array, index - 1); // Вызов функции с уменьшенным индексом
+// }
